@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Project 3</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav id="main-navbar">
+      <div id="navbar-container">
+        <ul>
+          <li><a href="index.html">Michael&apos;s Resume</a></li>
+          <li id="onpage"><a href="benefits-comparison.html">HSA vs HRA vs FSA</a></li>
+          <li><a href="w4.html">W-4 Form Explained</a></li>
+          <li><a href="maps.html">Testing</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+    <gmp-map
+      center="38.7946,-106.5348"
+      zoom="4"
+      map-id="DEMO_MAP_ID"
+      style="height: 400px"
+    >
+    </gmp-map>
+
+    <!--
+      The `defer` attribute causes the script to execute after the full HTML
+      document has been parsed. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeRWUiaNJxM3jvg1gGBAPFqNssfZ4r5lY&libraries=maps"
+      defer
+    ></script>
+</body>
+</html>
+ 

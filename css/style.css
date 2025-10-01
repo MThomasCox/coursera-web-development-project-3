@@ -281,3 +281,55 @@ footer.site-footer em {
   font-style: italic;
   color: #444;                   
 }
+
+/* Media Query - tablet */
+@media (min-width: 768px) {
+  body {
+    font-size: 1.05rem;        
+  }
+  
+  .container-fix {
+    max-width: 750px;               
+  }
+  
+  nav ul {
+    display: flex;                  
+    justify-content: center;
+    gap: 20px;                      
+  }
+  
+  article {
+    padding: 25px;                  
+  }
+  
+  #toTopBtn {
+    padding: 12px 24px;            
+  }
+}
+
+/* Media Query - desktops */
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.1rem;              
+    line-height: 1.7;              
+  }
+  
+  .container-fix {
+    max-width: 960px;              
+  }
+  
+  nav {
+    padding: 15px 40px;             
+  }
+  
+  article {
+    display: grid;                  
+    grid-template-columns: 2fr 1fr; 
+    gap: 20px;
+  }
+  
+  footer {
+    font-size: 0.95rem;             
+    text-align: center;
+  }
+}

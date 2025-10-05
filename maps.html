@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -5,12 +6,12 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeRWUiaNJxM3jvg1gGBAPFqNssfZ4r5lY" defer></script>
-  <script defer>
+  <script>
     function initMap() {
       const charlotte = { lat: 35.2271, lng: -80.8431 };
 
       const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 12, 
+        zoom: 12,
         center: charlotte,
       });
 
@@ -18,7 +19,7 @@
         { position: { lat: 35.26395673345371, lng: -80.7117797932544 }, title: "Reedy Creek Park" },
         { position: { lat: 35.303690914508074, lng: -80.80494487201284 }, title: "Ribbonwalk Nature Preserve" },
         { position: { lat: 35.211176783893265, lng: -80.77267253512987 }, title: "Evergreen Nature Preserve" }
-      ];  
+      ];
 
       naturePreserves.forEach(site => {
         new google.maps.Marker({
@@ -52,8 +53,6 @@
       </div>
     </nav>
   </header>
-
-  <!-- 3️⃣ Map container -->
   <div id="map"></div>
 </body>
 </html>
